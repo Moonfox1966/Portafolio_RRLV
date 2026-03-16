@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roberto Raúl Luna Valladares | Jefe TI Industrial | IT/OT</title>
+  <meta
+    name="description"
+    content="Ingeniero TI con más de 20 años de experiencia en IT/OT, minería e industria. Especialista en continuidad operacional, redes, bases de datos, automatización con VBA y gestión de proyectos."
+  />
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet"
+  />
+
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#0ea5b7",
+            primaryDark: "#0b7f8c",
+            surface: "#f8fafc",
+            surfaceAlt: "#e2e8f0",
+            ink: "#0f172a",
+            muted: "#475569",
+            darkBg: "#0b1220",
+            darkCard: "#111827",
+            darkSoft: "#1f2937",
+            darkBorder: "#334155",
+            lightBorder: "#cbd5e1"
+          },
+          fontFamily: {
+            headline: ["Manrope", "sans-serif"],
+            body: ["Inter", "sans-serif"]
+          },
+          boxShadow: {
+            soft: "0 10px 30px rgba(2, 8, 23, 0.10)"
+          }
+        }
+      }
+    };
+  </script>
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+#  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+#  <link rel="icon" href="assets/img/favicon.png" type="image/png" />
+#  <link rel="shortcut icon" href="assets/img/favicon.ico" />
+
+  <link rel="icon" href="/assets/img/favicon.png?v=2" type="image/png" />
+  <link rel="shortcut icon" href="/assets/img/favicon.ico?v=2" />
+
+</head>
+
+<body class="bg-surface text-ink dark:bg-darkBg dark:text-white font-body selection:bg-primary/20 selection:text-white">
+  <!-- NAVBAR -->
+  <nav class="glass-nav fixed top-0 left-0 w-full z-50 border-b border-lightBorder/50 dark:border-darkBorder/70">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#inicio" class="font-headline font-extrabold text-xl tracking-tight text-primary">
+        Roberto Luna
+      </a>
+
+      <div class="hidden md:flex items-center space-x-8">
+        <a class="nav-link" href="#inicio">Inicio</a>
+        <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+        <a class="nav-link" href="#competencias">Competencias</a>
+        <a class="nav-link" href="#experiencia">Experiencia</a>
+        <a class="nav-link" href="#educacion">Educación</a>
+        <a class="nav-link" href="#proyectos">Proyectos</a>
+        <a class="nav-link" href="#contacto">Contacto</a>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <button
+          id="theme-toggle"
+          class="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-darkSoft transition-colors"
+          aria-label="Cambiar tema"
+          type="button"
+        >
+          <span id="theme-icon" class="material-symbols-outlined text-slate-700 dark:text-slate-200">
+            dark_mode
+          </span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="pt-20">
+    <!-- HERO -->
+    <section id="inicio" class="min-h-screen flex items-center relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6 py-24 w-full relative z-10">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div class="relative group">
+            <div class="absolute inset-0 bg-primary/20 blur-3xl rounded-full scale-75 group-hover:scale-100 transition-transform duration-700"></div>
+            <div class="relative aspect-square max-w-md mx-auto rounded-3xl overflow-hidden border border-lightBorder dark:border-darkBorder shadow-soft bg-white dark:bg-darkCard">
+              <img
+                src="assets/img/perfil.jpg"
+                alt="Foto de Roberto Raúl Luna Valladares"
+                class="w-full h-full object-cover grayscale contrast-110 opacity-95 hover:grayscale-0 transition-all duration-700"
+              />
+            </div>
+          </div>
+
+          <div class="space-y-8">
+            <div>
+              <span class="text-primary font-semibold text-sm tracking-[0.2em] uppercase mb-4 block">
+                Portfolio Profesional
+              </span>
+
+              <h1 class="font-headline text-4xl md:text-6xl xl:text-7xl font-extrabold leading-tight tracking-tight mb-6">
+                Roberto Raúl <br />
+                Luna Valladares
+              </h1>
+
+              <h2 class="font-headline text-2xl md:text-3xl text-primary mb-6">
+                Jefe TI Industrial | IT/OT | Continuidad Operacional
+              </h2>
+
+              <p class="text-lg md:text-xl text-slate-600 dark:text-slate-300 max-w-2xl leading-relaxed">
+                +20 años en tecnología IT/OT, operación industrial y liderazgo de proyectos.
+              </p>
+            </div>
+
+            <p class="text-base md:text-lg text-slate-700 dark:text-slate-300 max-w-2xl leading-relaxed">
+              Ingeniero de Ejecución en Informática con amplia experiencia en tecnologías IT/OT,
+              operación industrial, redes, bases de datos, automatización y continuidad operacional
+              en entornos de alta exigencia.
+            </p>
+
+            <div class="flex flex-wrap gap-4 pt-2">
+              <a
+                href="assets/docs/CV-Roberto-Luna-Valladares.pdf"
+                download
+                class="btn-primary px-8 py-4 rounded-lg font-headline font-bold text-white inline-flex items-center gap-2 hover:brightness-110 transition-all"
+              >
+                Descargar CV
+                <span class="material-symbols-outlined text-lg">download</span>
+              </a>
+
+              <a
+                href="#contacto"
+                class="px-8 py-4 rounded-lg font-headline font-bold border border-lightBorder dark:border-darkBorder hover:bg-slate-100 dark:hover:bg-darkSoft transition-all"
+              >
+                Contactar
+              </a>
+            </div>
+
+            <div class="flex flex-wrap gap-5 pt-4 text-slate-600 dark:text-slate-300">
+              <a
+                href="https://www.linkedin.com/in/roberto-luna-valladares-5379069"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 hover:text-primary transition-colors"
+              >
+                <span class="material-symbols-outlined">share</span>
+                <span>LinkedIn</span>
+              </a>
+
+              <a
+                href="https://github.com/Moonfox1966"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 hover:text-primary transition-colors"
+              >
+                <span class="material-symbols-outlined">link</span>
+                <span>GitHub</span>
+              </a>
+
+              <a
+                href="mailto:lunavalladares@gmail.com"
+                class="inline-flex items-center gap-2 hover:text-primary transition-colors"
+              >
+                <span class="material-symbols-outlined">alternate_email</span>
+                <span>Email</span>
+              </a>
+            </div>
+
+            <div class="pt-2 text-sm text-slate-500 dark:text-slate-400">
+              Puerto Montt, Chile
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MI -->
+    <section id="sobre-mi" class="py-28 bg-slate-50 dark:bg-darkCard/60">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-12 gap-16">
+          <div class="lg:col-span-4">
+            <h2 class="font-headline text-4xl font-bold sticky top-32">Sobre mí</h2>
+          </div>
+
+          <div class="lg:col-span-8 space-y-10">
+            <p class="text-lg md:text-xl text-slate-700 dark:text-slate-300 leading-relaxed">
+              Ingeniero de Ejecución en Informática con más de 20 años de experiencia en tecnologías
+              IT/OT, operación industrial y gestión de proyectos. He liderado funciones TI en entorno
+              minero, incluyendo redes, comunicaciones, bases de datos, desarrollo de aplicaciones
+              para mina y análisis de datos. También he gestionado proyectos para organizaciones
+              públicas y privadas de alta exigencia, con foco en continuidad operacional, calidad de
+              información y coordinación técnica.
+            </p>
+
+            <div class="bg-white dark:bg-darkSoft p-8 md:p-10 rounded-2xl border border-lightBorder dark:border-darkBorder shadow-soft">
+              <h3 class="font-headline text-2xl font-bold text-primary mb-8">Lo que aporto</h3>
+
+              <div class="grid md:grid-cols-2 gap-8">
+                <div class="feature-card">
+                  <span class="material-symbols-outlined feature-icon">settings</span>
+                  <div>
+                    <h4 class="font-semibold mb-1">Gestión TI en entornos industriales</h4>
+                    <p class="text-sm text-slate-600 dark:text-slate-300">
+                      Foco en continuidad operacional y estabilidad técnica en ambientes críticos.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-card">
+                  <span class="material-symbols-outlined feature-icon">hub</span>
+                  <div>
+                    <h4 class="font-semibold mb-1">Integración IT/OT</h4>
+                    <p class="text-sm text-slate-600 dark:text-slate-300">
+                      Soporte e integración de tecnología en contextos operacionales complejos.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-card">
+                  <span class="material-symbols-outlined feature-icon">terminal</span>
+                  <div>
+                    <h4 class="font-semibold mb-1">Automatización y control</h4>
+                    <p class="text-sm text-slate-600 dark:text-slate-300">
+                      Optimización de procesos mediante Excel avanzado, macros y VBA.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-card">
+                  <span class="material-symbols-outlined feature-icon">groups</span>
+                  <div>
+                    <h4 class="font-semibold mb-1">Dirección y coordinación de equipos</h4>
+                    <p class="text-sm text-slate-600 dark:text-slate-300">
+                      Liderazgo técnico, coordinación transversal y administración remota por zonas.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-card">
+                  <span class="material-symbols-outlined feature-icon">inventory_2</span>
+                  <div>
+                    <h4 class="font-semibold mb-1">Gestión de proyectos</h4>
+                    <p class="text-sm text-slate-600 dark:text-slate-300">
+                      Uso de Microsoft Project, Teams, Planner y To Do para control y seguimiento.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature-card">
+                  <span class="material-symbols-outlined feature-icon">insights</span>
+                  <div>
+                    <h4 class="font-semibold mb-1">Calidad de información</h4>
+                    <p class="text-sm text-slate-600 dark:text-slate-300">
+                      Análisis, respaldo y gestión de datos para apoyar decisiones operacionales.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPETENCIAS -->
+    <section id="competencias" class="py-28">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="font-headline text-4xl font-bold mb-14 text-center">Competencias</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+          <!-- Tarjeta ancha 1 -->
+          <article class="skill-card xl:col-span-2">
+            <span class="material-symbols-outlined text-primary text-4xl mb-4">lan</span>
+            <h3 class="text-2xl font-bold mb-4">IT/OT e Infraestructura</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="chip">Redes y comunicaciones</span>
+              <span class="chip">Bases de datos</span>
+              <span class="chip">Respaldo y administración</span>
+              <span class="chip">Soporte alta tecnología</span>
+              <span class="chip">Continuidad operacional</span>
+              <span class="chip">Integración tecnológica</span>
+            </div>
+          </article>
+
+          <!-- Tarjeta ancha 2 -->
+          <article class="skill-card xl:col-span-2">
+            <span class="material-symbols-outlined text-primary text-4xl mb-4">code_blocks</span>
+            <h3 class="text-2xl font-bold mb-4">Desarrollo Full Stack Python</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="chip">Python</span>
+              <span class="chip">Django</span>
+              <span class="chip">Bootstrap / Tailwind</span>
+              <span class="chip">HTML + CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">Bases de datos</span>
+              <span class="chip">CRUD</span>
+              <span class="chip">Deploy Web</span>
+            </div>
+          </article>
+
+          <!-- Tarjetas normales -->
+          <article class="skill-card">
+            <span class="material-symbols-outlined text-primary text-4xl mb-4">data_exploration</span>
+            <h3 class="text-xl font-bold mb-4">Gestión y herramientas</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="chip">Microsoft Project</span>
+              <span class="chip">Teams</span>
+              <span class="chip">Planner</span>
+              <span class="chip">To Do</span>
+              <span class="chip">Excel Avanzado</span>
+              <span class="chip">VBA / Macros</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <span class="material-symbols-outlined text-primary text-4xl mb-4">rule_settings</span>
+            <h3 class="text-xl font-bold mb-4">Metodologías</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="chip">PMI</span>
+              <span class="chip">PMBOK 5</span>
+              <span class="chip">Gestión de cronogramas</span>
+              <span class="chip">Control de riesgos</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <span class="material-symbols-outlined text-primary text-4xl mb-4">forum</span>
+            <h3 class="text-xl font-bold mb-4">Habilidades transversales</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="chip">Comunicación efectiva</span>
+              <span class="chip">Resolución de conflictos</span>
+              <span class="chip">Liderazgo</span>
+              <span class="chip">Coordinación técnica</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <span class="material-symbols-outlined text-primary text-4xl mb-4">construction</span>
+            <h3 class="text-xl font-bold mb-4">Soporte y operación</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="chip">Operación industrial</span>
+              <span class="chip">Entornos mineros</span>
+              <span class="chip">Mantenimiento tecnológico</span>
+              <span class="chip">Proveedores especializados</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- EXPERIENCIA -->
+    <section id="experiencia" class="py-28 bg-slate-50 dark:bg-darkCard/60">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="font-headline text-4xl font-bold mb-16 text-center">Trayectoria Profesional</h2>
+
+        <div class="space-y-8 relative before:absolute before:left-5 md:before:left-1/2 before:top-0 before:h-full before:w-0.5 before:bg-slate-300 dark:before:bg-darkBorder">
+          <article class="timeline-item">
+            <div class="timeline-dot bg-primary"></div>
+            <div class="timeline-card">
+              <time class="timeline-time">02/2025 – Actualidad</time>
+              <h3 class="timeline-title">CTA – Asesor Tecnológico Estratégico</h3>
+              <p class="timeline-company">Profesional Independiente</p>
+              <p class="timeline-text">
+                Alineación entre estrategia tecnológica y negocio, acompañamiento en adopción tecnológica
+                y apoyo antes, durante y después de la implementación.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <time class="timeline-time">03/2024 – 01/2025</time>
+              <h3 class="timeline-title">Director Comercial Zonal CNCP</h3>
+              <p class="timeline-company">GTD Telsur</p>
+              <p class="timeline-text">
+                Dirección y fortalecimiento de equipo, mentoría comercial y coordinación con operaciones
+                y áreas técnicas.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <time class="timeline-time">08/2021 – 02/2024</time>
+              <h3 class="timeline-title">Director Comercial Transformación Digital Territorio Sur</h3>
+              <p class="timeline-company">GTD Telsur</p>
+              <p class="timeline-text">
+                Coordinación con equipos comerciales zonales y liderazgo del plan comercial de servicios
+                de transformación digital.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <time class="timeline-time">02/2019 – 07/2021</time>
+              <h3 class="timeline-title">Coordinador Técnico Iniciativa Innovación (Spin-Off)</h3>
+              <p class="timeline-company">Gtd Telsur</p>
+              <p class="timeline-text">
+                Coordinación con líderes técnicos, gestión de pilotos y apoyo a la experiencia de usuario
+                en implementación.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <time class="timeline-time">04/2016 – 03/2017</time>
+              <h3 class="timeline-title">Líder de Proyectos</h3>
+              <p class="timeline-company">SOAINT Gestión</p>
+              <p class="timeline-text">
+                Planificación, ejecución de cronogramas, cierre de proyectos, lecciones aprendidas y
+                aplicación de buenas prácticas PMI.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <time class="timeline-time">09/2013 – 04/2016</time>
+              <h3 class="timeline-title">Project Manager (Jefe de Proyectos)</h3>
+              <p class="timeline-company">ITBroker</p>
+              <p class="timeline-text">
+                Gestión integral de portafolio, presupuesto, riesgos, calidad, auditorías y reporting.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <time class="timeline-time">08/2010 – 12/2012</time>
+              <h3 class="timeline-title">Encargado del Área de Informática</h3>
+              <p class="timeline-company">Atacama Minerals Chile SCM</p>
+              <p class="timeline-text">
+                Gestión de redes y comunicaciones, respaldo y administración de bases de datos, desarrollo
+                de aplicaciones para mina, análisis de datos y coordinación con proveedores especializados.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCACION -->
+    <section id="educacion" class="py-28">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12">
+          <div>
+            <h2 class="font-headline text-4xl font-bold mb-10">Educación</h2>
+
+            <div class="space-y-8">
+              <div class="border-l-4 border-primary pl-6">
+                <h3 class="font-bold text-xl">Ingeniería Ejecución Informática (Plan Especial)</h3>
+                <p class="text-slate-600 dark:text-slate-300">
+                  Universidad de Ciencias de la Informática (2007–2008)
+                </p>
+              </div>
+
+              <div class="border-l-4 border-slate-300 dark:border-darkBorder pl-6">
+                <h3 class="font-bold text-xl">Analista de Sistemas</h3>
+                <p class="text-slate-600 dark:text-slate-300">
+                  Universidad de Ciencias de la Informática (2002–2004)
+                </p>
+              </div>
+
+              <div class="border-l-4 border-slate-300 dark:border-darkBorder pl-6">
+                <h3 class="font-bold text-xl">Licenciatura en Ciencias del Mar (incompleto)</h3>
+                <p class="text-slate-600 dark:text-slate-300">
+                  Universidad Arturo Prat (1986–1989)
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-slate-50 dark:bg-darkSoft p-8 md:p-10 rounded-2xl border border-lightBorder dark:border-darkBorder shadow-soft">
+            <h2 class="font-headline text-4xl font-bold mb-10">Idiomas</h2>
+
+            <div class="space-y-8">
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="font-semibold">Inglés técnico-científico</span>
+                  <span class="text-primary font-medium">Medio/Alto</span>
+                </div>
+                <div class="w-full bg-slate-200 dark:bg-slate-700 h-2 rounded-full overflow-hidden">
+                  <div class="bg-primary h-full w-[80%]"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between mb-2">
+                  <span class="font-semibold">Inglés oral</span>
+                  <span class="text-primary font-medium">Bajo/Medio</span>
+                </div>
+                <div class="w-full bg-slate-200 dark:bg-slate-700 h-2 rounded-full overflow-hidden">
+                  <div class="bg-primary h-full w-[40%]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="py-28 bg-slate-50 dark:bg-darkCard/60">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="mb-14">
+          <h2 class="font-headline text-4xl font-bold mb-4">Proyectos Destacados</h2>
+          <p class="text-slate-600 dark:text-slate-300">
+            Soluciones estratégicas para continuidad, integración y gestión operacional.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+          <article class="project-card">
+            <img
+              src="assets/img/proyecto-1.jpg"
+              alt="Proyecto continuidad operacional TI industrial"
+              class="project-image"
+            />
+            <div class="p-8">
+              <span class="project-tag">Infraestructura</span>
+              <h3 class="project-title">Continuidad Operacional TI Industrial</h3>
+              <p class="project-text">
+                Diseño de planes de contingencia, redundancia y soporte para sistemas críticos de operación.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="chip">IT/OT</span>
+                <span class="chip">Redundancia</span>
+                <span class="chip">Infraestructura</span>
+              </div>
+              <div class="flex gap-3">
+                <a href="#" class="project-link">Ver detalle</a>
+                <a
+                  href="https://github.com/Moonfox1966"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  Ver GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img
+              src="assets/img/proyecto-2.jpg"
+              alt="Proyecto integración IT OT"
+              class="project-image"
+            />
+            <div class="p-8">
+              <span class="project-tag">Integración</span>
+              <h3 class="project-title">Convergencia IT/OT Estratégica</h3>
+              <p class="project-text">
+                Integración de redes administrativas y operativas bajo criterios de seguridad y trazabilidad.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="chip">Security</span>
+                <span class="chip">Networking</span>
+                <span class="chip">Operación</span>
+              </div>
+              <div class="flex gap-3">
+                <a href="#" class="project-link">Ver detalle</a>
+                <a
+                  href="https://github.com/Moonfox1966"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  Ver GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img
+              src="assets/img/proyecto-3.jpg"
+              alt="Proyecto gestión de información operacional"
+              class="project-image"
+            />
+            <div class="p-8">
+              <span class="project-tag">Automatización</span>
+              <h3 class="project-title">Gestión de Información Operacional</h3>
+              <p class="project-text">
+                Automatización de reportes, control de datos y visualización de indicadores con Excel/VBA.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="chip">VBA</span>
+                <span class="chip">Excel</span>
+                <span class="chip">Reporting</span>
+              </div>
+              <div class="flex gap-3">
+                <a href="#" class="project-link">Ver detalle</a>
+                <a
+                  href="https://github.com/Moonfox1966"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  Ver GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="py-28">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-2 rounded-3xl overflow-hidden shadow-soft border border-lightBorder dark:border-darkBorder bg-white dark:bg-darkCard">
+          <div class="p-10 md:p-14 bg-slate-50 dark:bg-darkSoft">
+            <h2 class="font-headline text-4xl font-bold mb-6">Conectemos</h2>
+            <p class="text-slate-600 dark:text-slate-300 mb-10 text-lg">
+              Disponible para nuevos desafíos en dirección TI, consultoría industrial y optimización
+              de infraestructuras críticas.
+            </p>
+
+            <div class="space-y-6">
+              <div class="contact-item">
+                <span class="material-symbols-outlined contact-icon">mail</span>
+                <div>
+                  <div class="contact-label">Email</div>
+                  <a href="mailto:lunavalladares@gmail.com" class="contact-value">
+                    lunavalladares@gmail.com
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <span class="material-symbols-outlined contact-icon">call</span>
+                <div>
+                  <div class="contact-label">Teléfono</div>
+                  <a href="tel:+56975381858" class="contact-value">
+                    +56 9 7538 1858
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <span class="material-symbols-outlined contact-icon">location_on</span>
+                <div>
+                  <div class="contact-label">Ubicación</div>
+                  <div class="contact-value">Puerto Montt, Chile</div>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <span class="material-symbols-outlined contact-icon">share</span>
+                <div>
+                  <div class="contact-label">LinkedIn</div>
+                  <a
+                    href="https://www.linkedin.com/in/roberto-luna-valladares-5379069"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-value"
+                  >
+                    Ver perfil profesional
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <span class="material-symbols-outlined contact-icon">link</span>
+                <div>
+                  <div class="contact-label">GitHub</div>
+                  <a
+                    href="https://github.com/Moonfox1966"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-value"
+                  >
+                    github.com/Moonfox1966
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <p class="mt-10 text-sm text-slate-500 dark:text-slate-400">
+              Referencias disponibles a solicitud.
+            </p>
+          </div>
+
+          <div class="p-10 md:p-14">
+            <form
+              action="https://formsubmit.co/lunavalladares@gmail.com"
+              method="POST"
+              class="space-y-6"
+            >
+              <input type="hidden" name="_subject" value="Nuevo mensaje desde el portafolio web" />
+              <input type="hidden" name="_captcha" value="false" />
+
+              <div class="grid md:grid-cols-2 gap-6">
+                <div class="space-y-2">
+                  <label for="nombre" class="form-label">Nombre</label>
+                  <input id="nombre" name="nombre" type="text" class="form-input" required />
+                </div>
+
+                <div class="space-y-2">
+                  <label for="email" class="form-label">Email</label>
+                  <input id="email" name="email" type="email" class="form-input" required />
+                </div>
+              </div>
+
+              <div class="space-y-2">
+                <label for="asunto" class="form-label">Asunto</label>
+                <input id="asunto" name="asunto" type="text" class="form-input" required />
+              </div>
+
+              <div class="space-y-2">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" class="form-input" required></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary w-full py-4 rounded-lg font-headline font-bold text-white hover:brightness-110 transition-all">
+                Enviar mensaje
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-lightBorder dark:border-darkBorder py-12 bg-white dark:bg-darkBg">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+        <div>
+          <h3 class="font-headline font-bold text-xl">Roberto Raúl Luna Valladares</h3>
+          <p class="text-slate-600 dark:text-slate-400 mt-1">
+            Estrategia tecnológica y excelencia operacional en entornos industriales.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap gap-6 text-sm">
+          <a href="#inicio" class="footer-link">Inicio</a>
+          <a href="#sobre-mi" class="footer-link">Sobre mí</a>
+          <a href="#experiencia" class="footer-link">Experiencia</a>
+          <a href="#educacion" class="footer-link">Educación</a>
+          <a href="#proyectos" class="footer-link">Proyectos</a>
+          <a href="#contacto" class="footer-link">Contacto</a>
+        </div>
+      </div>
+
+      <div class="mt-8 pt-8 border-t border-lightBorder dark:border-darkBorder text-sm text-slate-500 dark:text-slate-400 flex flex-col md:flex-row justify-between gap-4">
+        <p>© 2026 Roberto Raúl Luna Valladares. Puerto Montt, Chile.</p>
+        <div class="flex gap-6">
+          <a
+            href="https://www.linkedin.com/in/roberto-luna-valladares-5379069"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-link"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com/Moonfox1966"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-link"
+          >
+            GitHub
+          </a>
+          <a href="mailto:lunavalladares@gmail.com" class="footer-link">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>
