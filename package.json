@@ -1,0 +1,28 @@
+{
+  "name": "portafolio_roberto",
+  "version": "1.0.0",
+  "description": "Sitio web personal profesional desarrollado con HTML5, Tailwind CSS y JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "npx @tailwindcss/cli -i ./src/input.css -o ./assets/css/output.css",
+    "watch:css": "npx @tailwindcss/cli -i ./src/input.css -o ./assets/css/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moonfox1966/Portafolio_RRLV.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Moonfox1966/Portafolio_RRLV/issues"
+  },
+  "homepage": "https://github.com/Moonfox1966/Portafolio_RRLV#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.2.1",
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^4.2.1"
+  }
+}
